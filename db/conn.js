@@ -5,7 +5,7 @@ config();
 const conn=mysql.createConnection({
     user : "root",
     host : "localhost",
-    password : process.env.PASSWORD,
+    password : "7352675671Piyush@",
     database : "crudmysql"  
 
 });
