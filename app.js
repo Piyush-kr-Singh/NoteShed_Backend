@@ -14,7 +14,13 @@ app.get("/", (req, res) => {
 // Middlewares
 
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+  origin: '*',
+  methods: 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
 
 app.use(router);
 
