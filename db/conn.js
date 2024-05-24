@@ -1,6 +1,6 @@
 const { config } = require('dotenv');
 const mysql=require('mysql2');
-const Process=config();
+config();
 
 const conn=mysql.createConnection({
     user : "root",
