@@ -3,10 +3,10 @@ const mysql=require('mysql2');
 config();
 
 const conn=mysql.createConnection({
-    user : "root",
-    host : "localhost",
-    password : "7352675671Piyush@",
-    database : "crudmysql"  
+    user : process.env.DB_USERNAME,
+    host : process.env.DB_HOST,
+    password : process.env.DB_PASSWORD,
+    database : process.env.DB_DBNAME,
 
 });
 
